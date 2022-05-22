@@ -105,5 +105,5 @@ div.flex-content-title {
 .translations-l, .translations-r {
 	margin-top: 10px;
 	font-size: 2.5vh;
-	border: 1px solid #00f;
+	/*border: 1px solid #00f;/**/
 }

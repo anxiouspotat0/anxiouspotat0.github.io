@@ -1,0 +1,109 @@
+:root {
+	--title-box-width: 7.5vw;
+	--title-box-height: 3vh;
+}
+
+* {
+	box-sizing: border-box;
+	overflow-x: hidden; /* keeps everything within window */
+}
+
+html {
+	font-family: "Comic Sans MS";
+	font-size: 2vh;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+hr {
+	border: 1px solid #2f2f2f;
+}
+
+div.header-container, div.main-container {
+	float: left;
+}
+
+div.header-container {
+	width: 100vw;
+	height: 50px;
+	background: rgba(255,255,255,0.08);
+	/*border: 1px solid #ff0;/**/
+}
+
+div.header {
+	
+}
+
+div.title-container {
+	float: left;
+	margin-top: 1.25vh;
+	margin-left: 1vw;
+	/*border: 1px solid #f00;/**/
+}
+
+.encoder, .decoder, span.header-title {
+	color: #fff;
+}
+
+div.main-container {
+	width: 100vw;
+	height: 90vh;
+	/*border: 1px solid #ff0;/**/
+}
+
+div.main-content {
+	margin: 10px 25px;
+	padding: 25px 15px;
+	background: rgba(255, 255, 255, 0.05);
+	border-radius: 8px;
+	height: 375px;
+	/*border: 1px solid #00f;/**/
+}
+
+div.flex-container {
+	display: flex;
+}
+
+div.flex-content {
+	flex: 1;
+	margin: 15px;
+}
+
+div.flex-content:first-child {
+	margin-right: 10px;
+}
+
+div.flex-content-title {
+	margin-bottom: 10px;
+}
+
+.txtArea {
+	width: 100%;
+	height: 15vh;
+	border-radius: 8px;
+	resize: none;
+	padding: 8px;
+}
+
+.txtArea:focus {
+	outline: none;
+}
+
+.encoder {
+	
+	/*border: 1px solid #0f0;/**/
+}
+
+.decoder {
+	
+	/*border: 1px solid #00f;/**/
+}
+
+.translations-l, .translations-r {
+	margin-top: 10px;
+	font-size: 2.5vh;
+	border: 1px solid #00f;
+}

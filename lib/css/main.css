@@ -3,6 +3,16 @@
 	--title-box-height: 3vh;
 }
 
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
 * {
 	box-sizing: border-box;
 	overflow-x: hidden; /* keeps everything within window */
@@ -112,4 +122,19 @@ div.flex-content-title {
 
 highlight {
 	color: #ffd700;
+}
+
+/* rgb */
+.header-title {
+	font-weight: bold;
+	background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet, red);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: rainbow-animation 35s linear infinite;
+}
+
+@keyframes rainbow-animation {
+    to {
+        background-position: 375vh;
+    }
 }

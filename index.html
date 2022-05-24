@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title></title>
+		<title id="title">elmo's world</title>
 		<link rel="stylesheet" href="lib/css/main.css">
 		<meta name="color-scheme" content="dark light">
 		<meta charset="UTF-8">
@@ -15,7 +15,7 @@
 		<div class="header-container">
 			<div class="header">
 				<div class="title-container">
-					<span class="header-title">my brain is too cooked for this shit</span>
+					<span class="header-title"></span>
 				</div>
 			</div>
 		</div>
@@ -23,26 +23,22 @@
 		<div class="main-container">
 			<div class="main-content flex-container">
 				<div class="flex-content encoder">
-					<div class="flex-content-title">Latin to Gibberish</div>
+					<div class="flex-content-title noselect">Latin to Gibberish</div>
 					<textarea class="txtArea" placeholder="Type something here!" id="encoder"></textarea>
 					<div class="translations-l" id="encodedTxt"></div>
 				</div>
 				<hr>
 				<div class="flex-content decoder">
-					<div class="flex-content-title">Gibberish to Latin</div>
+					<div class="flex-content-title noselect">Gibberish to Latin</div>
 					<textarea class="txtArea" placeholder="Type gibberish here!" id="decoder"></textarea>
 					<div class="translations-r" id="decodedTxt"></div>
 				</div>
 			</div>
 			
-			<div class="main-content">
-				<div>
-					Note: The Decoder is currently having issues decoding the characters: <highlight>𝙹</highlight> (H), <highlight>||</highlight> (P), <highlight>¡!</highlight> (Y)
-
-				</div>
-				<hr>
+			<div class="main-content noselect">
 				<div>scooby doo section (find symbol, read results! ezpz)</div>
-				<div>(Work in Progress! i have stuff to do irl too..)</div>
+				<br>
+				<div>(<highlight>Work in Progress!</highlight> i have stuff to do irl too..)</div>
 			</div>
 		</div>
 	</body>

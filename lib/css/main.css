@@ -54,6 +54,14 @@ div.title-container {
 	/*border: 1px solid #f00;/**/
 }
 
+div.title-right {
+	float: right;
+	margin: 1.5vh 1vw 0px 0px;
+	cursor: pointer;
+	font-size: 15px;
+	color: rgba(255,255,255,0.09);
+}
+
 .encoder, .decoder, span.header-title {
 	color: #fff;
 }
@@ -69,7 +77,7 @@ div.main-content {
 	padding: 25px 15px;
 	background: rgba(255, 255, 255, 0.05);
 	border-radius: 8px;
-	height: 375px;
+	height: calc(100vh - calc(var(--title-box-height) + 88px));
 	/*border: 1px solid #00f;/**/
 }
 
@@ -112,10 +120,36 @@ div.flex-content-title {
 	/*border: 1px solid #00f;/**/
 }
 
+.decoder-btn {
+	background: rgba(255,255,255,0.1);
+	color: #e1e1e1;
+	border: 0;
+	border-radius: 10px;
+	font-size: 3vh;
+	min-width: 4vw;
+	min-height: 4vw;
+	margin-right: 3px;
+	margin-bottom: 3px;
+	line-height: 1;
+}
+
+.decoder-btn:hover {
+	background: rgba(255,255,255,0.15);
+	cursor: pointer;
+}
+
+.decoder-btn:active {
+	background: rgba(255,255,255,0.085);
+}
+
 .translations-l, .translations-r {
 	margin-top: 10px;
 	font-size: 2.5vh;
+	min-height: 100px;
 	/*border: 1px solid #00f;/**/
+	background: rgba(255,255,255,0.025);
+	border-radius: 10px;
+	padding: 0px 15px;
 }
 
 /* stuff */
